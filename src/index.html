@@ -9,8 +9,8 @@
     <title>Girls Network | Home</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="In Dev" />
-    <meta name="keywords" content="Dev, Discord, Girls, Transfemme" />
+    <meta name="description" content="A vibrant community network for all folks - Gaming, Development, and Connection" />
+    <meta name="keywords" content="Dev, Discord, Girls, Transfemme, Community, Gaming, Minecraft" />
     <meta name="author" content="Girls Network" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     
@@ -27,15 +27,15 @@
     <link rel="apple-touch-icon" href="/favicon.ico" />
     
     <!-- Theme Color -->
-    <meta name="theme-color" content="#8b5cf6" />
+    <meta name="theme-color" content="#ff1cf7" />
 
     <!-- Open Graph / Discord / Facebook -->
     <meta property="og:site_name" content="Girls Network">
     <meta property="og:title" content="Girls Network | Home" />
-    <meta property="og:description" content="In Dev" />
-    <meta property="og:image" content="https://girlsnetwork.dev/favicon.ico" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="A vibrant community network for all folks - Gaming, Development, and Connection" />
+    <meta property="og:image" content="https://girlsnetwork.dev/favicon.png" />
+    <meta property="og:image:width" content="5000" />
+    <meta property="og:image:height" content="5000" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://girlsnetwork.dev/" />
     <meta property="og:locale" content="en_GB" />
@@ -43,8 +43,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Girls Network | Home" />
-    <meta name="twitter:description" content="In Dev" />
-    <meta name="twitter:image" content="https://girlsnetwork.dev/favicon.ico" />
+    <meta name="twitter:description" content="A vibrant community network for all folks" />
+    <meta name="twitter:image" content="https://girlsnetwork.dev/favicon.png" />
     <meta name="twitter:site" content="@FollowAllGirlss" />
 
     <!-- Structured Data (JSON-LD) -->
@@ -54,7 +54,7 @@
       "@type": "WebSite",
       "name": "Girls Network",
       "url": "https://girlsnetwork.dev/",
-      "description": "In Dev",
+      "description": "A vibrant community network for all folks",
       "publisher": {
         "@type": "Organization",
         "name": "Girls Network",
@@ -63,12 +63,7 @@
           "url": "https://girlsnetwork.dev/favicon.ico"
         }
       },
-      "inLanguage": "en-GB",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://girlsnetwork.dev/?search={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-GB"
     }
     </script>
     
@@ -80,7 +75,7 @@
       "name": "Girls Network",
       "url": "https://girlsnetwork.dev/",
       "logo": "https://girlsnetwork.dev/favicon.ico",
-      "description": "In Dev",
+      "description": "A vibrant community network for all folks",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "General Inquiry",
@@ -89,21 +84,88 @@
     }
     </script>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/home.css">
 
 </head>
 <body>
-    <div class="container">
-        <div class="loader"></div>
-        <h1 class="title">Coming Soon</h1>
-        <p class="subtitle">We're working on something awesome</p>
-        <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+    <div class="stars"></div>
+    <div class="scanlines"></div>
+    
+    <nav class="nav">
+        <div class="nav-logo">GIRLS<span class="neon">NETWORK</span></div>
+        <div class="nav-links">
+            <a href="/" class="nav-link active">Home</a>
+            <a href="/servers" class="nav-link">Servers</a>
+            <a href="/mc" class="nav-link">Minecraft</a>
         </div>
-    </div>
-    <script src="js/index.js"></script>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="GIRLS">GIRLS</span>
+                <span class="glitch" data-text="NETWORK">NETWORK</span>
+            </h1>
+            <p class="hero-subtitle">A vibrant digital space for our community, gaming, and creativity</p>
+            
+            <div class="hero-tags">
+                <span class="tag">✨ Gaming</span>
+                <span class="tag">🎮 Minecraft</span>
+                <span class="tag">♟️ Chess</span>
+                <span class="tag">📸 Photography</span>
+                <span class="tag">🎲 D&D</span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="/servers" class="btn btn-primary">
+                    <span>Join Our Community</span>
+                    <div class="btn-glow"></div>
+                </a>
+                <a href="/mc" class="btn btn-secondary">
+                    <span>Explore Minecraft</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="cyber-frame">
+                <div class="frame-corner tl"></div>
+                <div class="frame-corner tr"></div>
+                <div class="frame-corner bl"></div>
+                <div class="frame-corner br"></div>
+                <div class="frame-content">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring" style="animation-delay: 0.5s;"></div>
+                    <div class="pulse-ring" style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">🌐</div>
+            <h3>Multiple Communities</h3>
+            <p>Connect across diverse interests and hobbies</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🏳️‍⚧️</div>
+            <h3>Safe Space</h3>
+            <p>Welcoming environment for all folks of all ages, sexualities, and identities</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h3>Active & Engaged</h3>
+            <p>Vibrant discussions and regular events</p>
+        </div>
+    </section>
+
+    <script src="js/home.js"></script>
 </body>
 </html>
