@@ -299,3 +299,23 @@ main.servers-container {
 /* Your content above the watermark */
 main.servers-container { position: relative; z-index: 2; }
 .nav { position: fixed; z-index: 3; }
+
+/* Hide Vanta on mobile devices */
+@media (max-width: 768px) {
+  #vantabg {
+    display: none !important;
+  }
+  
+  /* Optional: Add a simpler background for mobile */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 28, 247, 0.1) 0%,
+      transparent 50%
+    );
+  }
+}
