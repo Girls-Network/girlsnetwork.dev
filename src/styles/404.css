@@ -286,3 +286,7 @@ main.servers-container {
 /* Your content above the watermark */
 main.servers-container { position: relative; z-index: 2; }
 .nav { position: fixed; z-index: 3; }
+
+.page-center {
+  transform: translateY(-2.5vh);
+}
