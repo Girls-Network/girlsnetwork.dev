@@ -1,4 +1,3 @@
-/* 404.combined.css — only what your 404.html uses (Vanta background only) */
 
 :root {
   --neon-pink: #ff1cf7;
@@ -26,12 +25,6 @@ body {
 
 a { text-decoration: none; }
 
-/* Vanta background layer */
-#vanta-bg {
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-}
 
 /* Scanlines overlay */
 .scanlines {
@@ -262,20 +255,6 @@ main.servers-container {
   .page-title { font-size: 2.5rem; }
 }
 
-#vanta-bg {
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-}
-
-/* Vanta stays behind everything */
-#vanta-bg {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-}
-
-/* Watermark above Vanta */
 .error-bg {
   position: fixed;
   inset: 0;
