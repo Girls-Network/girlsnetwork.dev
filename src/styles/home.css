@@ -14,7 +14,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
     min-height: 100vh;
@@ -45,7 +46,7 @@ body {
     width: 2px;
     height: 2px;
     background: white;
-    box-shadow: 
+    box-shadow:
         100px 200px white, 300px 100px white, 500px 300px white,
         700px 150px white, 200px 400px white, 600px 500px white,
         150px 600px white, 450px 400px white, 800px 250px white,
@@ -59,7 +60,7 @@ body {
 .stars::after {
     width: 1px;
     height: 1px;
-    box-shadow: 
+    box-shadow:
         200px 300px white, 400px 200px white, 600px 400px white,
         800px 250px white, 300px 500px white, 700px 600px white,
         250px 700px white, 550px 500px white, 900px 350px white,
@@ -69,8 +70,13 @@ body {
 }
 
 @keyframes stars {
-    from { transform: translateY(0); }
-    to { transform: translateY(-1000px); }
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-1000px);
+    }
 }
 
 /* Scanline effect */
@@ -82,19 +88,22 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 10;
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.15),
-        rgba(0, 0, 0, 0.15) 1px,
-        transparent 1px,
-        transparent 2px
-    );
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px,
+            transparent 2px);
     animation: scanline 8s linear infinite;
 }
 
 @keyframes scanline {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(10px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 /* Navigation */
@@ -123,7 +132,7 @@ body {
 
 .nav-logo .neon {
     color: var(--neon-pink);
-    text-shadow: 
+    text-shadow:
         0 0 10px var(--neon-pink),
         0 0 20px var(--neon-pink),
         0 0 30px var(--neon-pink);
@@ -132,13 +141,14 @@ body {
 
 @keyframes neon-pulse {
     from {
-        text-shadow: 
+        text-shadow:
             0 0 10px var(--neon-pink),
             0 0 20px var(--neon-pink),
             0 0 30px var(--neon-pink);
     }
+
     to {
-        text-shadow: 
+        text-shadow:
             0 0 20px var(--neon-pink),
             0 0 30px var(--neon-pink),
             0 0 40px var(--neon-pink),
@@ -241,30 +251,81 @@ body {
 }
 
 @keyframes glitch-anim {
-    0% { clip: rect(10px, 9999px, 31px, 0); }
-    20% { clip: rect(85px, 9999px, 140px, 0); }
-    40% { clip: rect(45px, 9999px, 98px, 0); }
-    60% { clip: rect(120px, 9999px, 155px, 0); }
-    80% { clip: rect(25px, 9999px, 70px, 0); }
-    100% { clip: rect(95px, 9999px, 125px, 0); }
+    0% {
+        clip: rect(10px, 9999px, 31px, 0);
+    }
+
+    20% {
+        clip: rect(85px, 9999px, 140px, 0);
+    }
+
+    40% {
+        clip: rect(45px, 9999px, 98px, 0);
+    }
+
+    60% {
+        clip: rect(120px, 9999px, 155px, 0);
+    }
+
+    80% {
+        clip: rect(25px, 9999px, 70px, 0);
+    }
+
+    100% {
+        clip: rect(95px, 9999px, 125px, 0);
+    }
 }
 
 @keyframes glitch-anim2 {
-    0% { clip: rect(65px, 9999px, 119px, 0); }
-    20% { clip: rect(45px, 9999px, 98px, 0); }
-    40% { clip: rect(120px, 9999px, 155px, 0); }
-    60% { clip: rect(10px, 9999px, 31px, 0); }
-    80% { clip: rect(95px, 9999px, 125px, 0); }
-    100% { clip: rect(25px, 9999px, 70px, 0); }
+    0% {
+        clip: rect(65px, 9999px, 119px, 0);
+    }
+
+    20% {
+        clip: rect(45px, 9999px, 98px, 0);
+    }
+
+    40% {
+        clip: rect(120px, 9999px, 155px, 0);
+    }
+
+    60% {
+        clip: rect(10px, 9999px, 31px, 0);
+    }
+
+    80% {
+        clip: rect(95px, 9999px, 125px, 0);
+    }
+
+    100% {
+        clip: rect(25px, 9999px, 70px, 0);
+    }
 }
 
 @keyframes glitch-skew {
-    0% { transform: skew(0deg); }
-    10% { transform: skew(-2deg); }
-    20% { transform: skew(0deg); }
-    30% { transform: skew(1deg); }
-    40% { transform: skew(0deg); }
-    100% { transform: skew(0deg); }
+    0% {
+        transform: skew(0deg);
+    }
+
+    10% {
+        transform: skew(-2deg);
+    }
+
+    20% {
+        transform: skew(0deg);
+    }
+
+    30% {
+        transform: skew(1deg);
+    }
+
+    40% {
+        transform: skew(0deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
 }
 
 .hero-subtitle {
@@ -412,8 +473,13 @@ body {
 }
 
 @keyframes corner-glow {
-    from { box-shadow: 0 0 20px var(--neon-pink); }
-    to { box-shadow: 0 0 40px var(--neon-pink), 0 0 60px var(--neon-pink); }
+    from {
+        box-shadow: 0 0 20px var(--neon-pink);
+    }
+
+    to {
+        box-shadow: 0 0 40px var(--neon-pink), 0 0 60px var(--neon-pink);
+    }
 }
 
 .frame-content {
@@ -442,6 +508,7 @@ body {
         transform: scale(0.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(2);
         opacity: 0;
@@ -572,36 +639,38 @@ a {
 }
 
 .site-footer {
-  padding: 24px 0;
-  background-color: rgba(14, 14, 23, 0.8);; /* optional */
+    padding: 24px 0;
+    background-color: rgba(14, 14, 23, 0.8);
+    ;
+    /* optional */
 }
 
 .footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  font-size: 0.9rem;
-  color: #bdbdbd;
+    font-size: 0.9rem;
+    color: #bdbdbd;
 }
 
 .footer-inner a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .footer-inner a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Mobile-friendly spacing */
 @media (max-width: 600px) {
-  .footer-inner {
-    flex-direction: column;
-    gap: 12px;
-  }
+    .footer-inner {
+        flex-direction: column;
+        gap: 12px;
+    }
 }

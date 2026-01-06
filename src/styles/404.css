@@ -1,4 +1,3 @@
-
 :root {
   --neon-pink: #ff1cf7;
   --neon-blue: #00f0ff;
@@ -7,9 +6,14 @@
   --text-secondary: #a8a8b8;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -23,7 +27,9 @@ body {
   position: relative;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 
 /* Scanlines overlay */
@@ -32,25 +38,30 @@ a { text-decoration: none; }
   inset: 0;
   pointer-events: none;
   z-index: 10;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15) 1px,
-    transparent 1px,
-    transparent 2px
-  );
+  background: repeating-linear-gradient(0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px);
   animation: scanline 8s linear infinite;
 }
 
 @keyframes scanline {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(10px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 /* Nav */
 .nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -85,6 +96,7 @@ a { text-decoration: none; }
       0 0 20px var(--neon-pink),
       0 0 30px var(--neon-pink);
   }
+
   to {
     text-shadow:
       0 0 20px var(--neon-pink),
@@ -94,7 +106,10 @@ a { text-decoration: none; }
   }
 }
 
-.nav-links { display: flex; gap: 2rem; }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
 
 .nav-link {
   color: var(--text-secondary);
@@ -118,15 +133,20 @@ a { text-decoration: none; }
 }
 
 .nav-link:hover,
-.nav-link.active { color: var(--text-primary); }
+.nav-link.active {
+  color: var(--text-primary);
+}
 
 .nav-link:hover::before,
-.nav-link.active::before { width: 80%; }
+.nav-link.active::before {
+  width: 80%;
+}
 
 /* 404 content layout */
 main.servers-container {
   min-height: 100vh;
-  padding: 96px 3rem 0; /* push content down instead of margin */
+  padding: 96px 3rem 0;
+  /* push content down instead of margin */
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
@@ -163,7 +183,8 @@ main.servers-container {
 .glitch::after {
   content: attr(data-text);
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -183,30 +204,81 @@ main.servers-container {
 }
 
 @keyframes glitch-anim {
-  0% { clip: rect(10px, 9999px, 31px, 0); }
-  20% { clip: rect(85px, 9999px, 140px, 0); }
-  40% { clip: rect(45px, 9999px, 98px, 0); }
-  60% { clip: rect(120px, 9999px, 155px, 0); }
-  80% { clip: rect(25px, 9999px, 70px, 0); }
-  100% { clip: rect(95px, 9999px, 125px, 0); }
+  0% {
+    clip: rect(10px, 9999px, 31px, 0);
+  }
+
+  20% {
+    clip: rect(85px, 9999px, 140px, 0);
+  }
+
+  40% {
+    clip: rect(45px, 9999px, 98px, 0);
+  }
+
+  60% {
+    clip: rect(120px, 9999px, 155px, 0);
+  }
+
+  80% {
+    clip: rect(25px, 9999px, 70px, 0);
+  }
+
+  100% {
+    clip: rect(95px, 9999px, 125px, 0);
+  }
 }
 
 @keyframes glitch-anim2 {
-  0% { clip: rect(65px, 9999px, 119px, 0); }
-  20% { clip: rect(45px, 9999px, 98px, 0); }
-  40% { clip: rect(120px, 9999px, 155px, 0); }
-  60% { clip: rect(10px, 9999px, 31px, 0); }
-  80% { clip: rect(95px, 9999px, 125px, 0); }
-  100% { clip: rect(25px, 9999px, 70px, 0); }
+  0% {
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+
+  20% {
+    clip: rect(45px, 9999px, 98px, 0);
+  }
+
+  40% {
+    clip: rect(120px, 9999px, 155px, 0);
+  }
+
+  60% {
+    clip: rect(10px, 9999px, 31px, 0);
+  }
+
+  80% {
+    clip: rect(95px, 9999px, 125px, 0);
+  }
+
+  100% {
+    clip: rect(25px, 9999px, 70px, 0);
+  }
 }
 
 @keyframes glitch-skew {
-  0% { transform: skew(0deg); }
-  10% { transform: skew(-2deg); }
-  20% { transform: skew(0deg); }
-  30% { transform: skew(1deg); }
-  40% { transform: skew(0deg); }
-  100% { transform: skew(0deg); }
+  0% {
+    transform: skew(0deg);
+  }
+
+  10% {
+    transform: skew(-2deg);
+  }
+
+  20% {
+    transform: skew(0deg);
+  }
+
+  30% {
+    transform: skew(1deg);
+  }
+
+  40% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(0deg);
+  }
 }
 
 .error-bg {
@@ -240,19 +312,40 @@ main.servers-container {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav { padding: 1rem 1.5rem; }
-  .nav-logo { font-size: 1.2rem; }
-  .nav-links { gap: 1rem; }
-  .nav-link { padding: 0.25rem 0.5rem; font-size: 0.9rem; }
+  .nav {
+    padding: 1rem 1.5rem;
+  }
 
-  main.servers-container { padding: 0 1.5rem; }
+  .nav-logo {
+    font-size: 1.2rem;
+  }
 
-  .page-title { font-size: 3rem; }
-  .page-subtitle { font-size: 1.1rem; }
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  main.servers-container {
+    padding: 0 1.5rem;
+  }
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .page-title { font-size: 2.5rem; }
+  .page-title {
+    font-size: 2.5rem;
+  }
 }
 
 /* Vanta stays behind everything */
@@ -275,7 +368,8 @@ main.servers-container {
   letter-spacing: 0.1em;
 
   color: var(--neon-pink);
-  opacity: 0.06;           /* bump up so you can SEE it */
+  opacity: 0.06;
+  /* bump up so you can SEE it */
   text-shadow: 0 0 30px var(--neon-pink);
 
   pointer-events: none;
@@ -284,8 +378,15 @@ main.servers-container {
 }
 
 /* Your content above the watermark */
-main.servers-container { position: relative; z-index: 2; }
-.nav { position: fixed; z-index: 3; }
+main.servers-container {
+  position: relative;
+  z-index: 2;
+}
+
+.nav {
+  position: fixed;
+  z-index: 3;
+}
 
 .page-center {
   transform: translateY(-2.5vh);
@@ -294,7 +395,9 @@ main.servers-container { position: relative; z-index: 2; }
 
 .site-footer {
   padding: 24px 0;
-  background-color: rgba(14, 14, 23, 0.8);; /* optional */
+  background-color: rgba(14, 14, 23, 0.8);
+  ;
+  /* optional */
 }
 
 .footer-inner {
